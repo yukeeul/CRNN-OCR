@@ -37,7 +37,7 @@
 
 `python3 train.py`
 
-Все гиперпараметры лежат в configs/main.yaml 
+Все гиперпараметры лежат в configs/main.yaml
 
 По умолчанию датасет загружается из dvc, если это не будет работать(например, потому что я не отдам пароль), можно прописать `load_from_dvc: false`
 
@@ -61,11 +61,3 @@ ans: jumps over lazy frog
 
 ## Нереализованные фичи
 TensorRT, Inference Server
-
-
-
-
-
-
-
-
