@@ -1,0 +1,43 @@
+[project]
+name = "CRNN-OCR"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Iurii Ulianov",email = "ulianov.iuv@phystech.edu"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # data
+    "datasets",
+
+    # ML
+    "pillow (==9.5.0)",
+    "torch",
+    "torchvision",
+    "pytorch-lightning",
+
+    "onnx",
+    "onnxruntime",
+
+    "nltk",
+
+    "mlflow (==2.22.1)",
+
+    "hydra-core",
+
+    # git & dvc
+    "pre-commit",
+    "black",
+    "isort",
+    "flake8",
+    "dvc",
+    "dvc-webdav"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

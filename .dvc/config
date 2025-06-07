@@ -1,0 +1,6 @@
+['remote "data"']
+    url=webdavs://webdav.yandex.ru/data
+    user=ydsulyanov
+['remote "models"']
+    url=webdavs://webdav.yandex.ru/models
+    user=ydsulyanov

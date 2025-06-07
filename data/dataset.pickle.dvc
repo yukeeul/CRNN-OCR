@@ -1,0 +1,5 @@
+outs:
+- md5: 2185552a3818fee0243509ace6634485
+  size: 3277
+  hash: md5
+  path: dataset.pickle

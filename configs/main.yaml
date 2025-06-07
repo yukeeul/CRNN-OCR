@@ -1,0 +1,22 @@
+model:
+  charset_size: 100
+  hidden_size: 64
+  name: CRNN-OCR
+  img_size: [2000, 128]
+tokenizer:
+  max_label_length: 100
+data:
+  load_from_dvc: true
+training:
+  batch_size: 20
+  num_train_batches: 100
+  num_val_batches: 20
+  epochs: 10
+
+hydra:
+  output_subdir: config
+  run:
+    dir: outputs/${model.name}/${now:%Y-%m-%d}_${now:%H-%M-%S}
+  sweep:
+    dir: multirun/${model.name}/${now:%Y-%m-%d}_${now:%H-%M-%S}
+    subdir: ${hydra.job.override_dirname}
